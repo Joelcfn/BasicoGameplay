@@ -17,6 +17,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {      // Keep the player in bounds
+
+
+
+    
     if (transform.position.x < -xRange)
     {
         transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
@@ -30,9 +34,11 @@ public class PlayerController : MonoBehaviour
     }
 
 
-
-     if (Input.GetKeyDown(KeyCode.Space))
+    if (Input.GetKeyDown(KeyCode.Space))
     {
         // Launch a projectile from the player
     }
+
+
+    
 }
